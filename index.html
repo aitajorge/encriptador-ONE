@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Encriptador ONE</title>
+</head>
+
+<body>
+
+  <header class="lineaPpal">
+      <img class="logo" src="/img/logo.png" style="margin-left: 2%; margin-top: 1%;">
+       <h1>Encriptador ONE</h1>
+  </header>
+
+  <main class="container">
+    <div class="ventana">
+      <textarea name="texto" class="texto" id="texto" placeholder="Ingresa el texto aquí, minúsculas sin acentos"></textarea>
+    </div>
+ 
+    <div class="ventana">
+        <div class="encriptado">
+          <img src="/img/muneco.png" alt="" id="imagenMuneco"/>
+        </div>
+  </main>
+  <section class="seccion">
+      <div class="boton">
+        <button type="button" onclick="textoEncriptar();" class="btn-encripta" >Encriptar
+        </button>
+        <input type="button" class="btn-desencripta" value="Desencriptar" onclick="textoDesencriptar()" >
+  <!--      <button onclick="textoDesencriptar();" class="btn-desencripta" disabled>Desencriptar
+        </button>
+        --> 
+      </div>
+      <div class="encriptado">
+        <img src="img/muñeco.jpg" alt="" id="muñeco"> 
+        <!-- <a href="http://www.freepik.com">Designed by stockgiu / Freepik</a> -->
+
+    </div>
+  </section>
+  
+
+
+  <footer>
+    <p>Copyright  &copy;2023 - Encriptador ONE.</p>
+  </footer>
+  
+</body>
+
+<script src="app.js"></script>
+</html>
